@@ -17,8 +17,11 @@
         <key>Nice</key>
         <integer>1</integer>
 
-        <key>StartInterval</key>
-        <integer>3600</integer>
+         <key>StartCalendarInterval</key>
+        <dict>
+                <key>Minute</key>
+                <integer>10</integer>
+        </dict>
 
         <key>StandardErrorPath</key>
         <string>/tmp/dev.zoid.calibre-backup-zx.err</string>
