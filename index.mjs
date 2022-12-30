@@ -13,9 +13,10 @@ const profile = args["--profile"] || "default";
 
 $.verbose = debug
 const date = new Date().toLocaleDateString('de')
+const time = new Date().toLocaleTimeString('de')
 
 const groupedTasks = await task.group(task => [
-  task(`Check AWS user (${date})`, async () => {
+  task(`Check AWS user (${date} at ${time})`, async () => {
     const callerCmd = await $`/usr/local/bin/aws --profile ${profile} sts get-caller-identity`;
     const caller = JSON.parse(callerCmd.stdout);
     if (caller.Account !== process.env.AWS_ACCOUNT_ID) {
@@ -27,7 +28,7 @@ const groupedTasks = await task.group(task => [
     return true
   }),
 
-  task(`Run backup (${date})`, async () => {
+  task(`Run backup (${date} at ${time})`, async () => {
     const callerCmd = await $`/usr/local/bin/aws --profile ${profile} s3 sync ${process.env.LOCAL_FOLDER} ${process.env.S3_BUCKET}`;
     console.log(callerCmd.stdout);
     return true
