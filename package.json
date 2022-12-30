@@ -1,0 +1,15 @@
+{
+  "name": "backup-scheduler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "5.0.2",
+    "tasuku": "2.0.0",
+    "zx": "7.1.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.16.12",
+    "esbuild-runner": "2.2.2"
+  }
+}

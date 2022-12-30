@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Label</key>
+        <string>dev.zoid.calibre-backup-zx</string>
+
+        <key>ProgramArguments</key>
+        <array>
+                <string>/Users/divyendusingh/.nvm/versions/node/v18.11.0/bin/node</string>
+                <string>/Users/divyendusingh/Documents/zoid/playground/backup-scheduler/index.mjs</string>
+        </array>
+
+        <key>OnDemand</key>
+        <false/>
+
+        <key>Nice</key>
+        <integer>1</integer>
+
+        <key>StartInterval</key>
+        <integer>3600</integer>
+
+        <key>StandardErrorPath</key>
+        <string>/tmp/dev.zoid.calibre-backup-zx.err</string>
+
+        <key>StandardOutPath</key>
+        <string>/tmp/dev.zoid.calibre-backup-zx.out</string>
+</dict>
+</plist>
