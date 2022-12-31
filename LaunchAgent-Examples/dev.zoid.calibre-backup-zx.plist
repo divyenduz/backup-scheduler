@@ -8,14 +8,13 @@
                 <key>ProgramArguments</key>
                 <array>
                         <string>/Users/divyendusingh/.nvm/versions/node/v18.11.0/bin/node</string>
-                        <string>
-                                /Users/divyendusingh/Documents/zoid/playground/backup-scheduler/index.mjs</string>
+                        <string>/Users/divyendusingh/Documents/zoid/playground/backup-scheduler/index.mjs</string>
                 </array>
 
                 <key>StartCalendarInterval</key>
                 <dict>
                         <key>Minute</key>
-                        <integer>20</integer>
+                        <integer>30</integer>
                 </dict>
 
                 <key>StandardErrorPath</key>
